@@ -8,7 +8,7 @@ const divgetCharacterCount = document.querySelector("li[ data-testid='character-
 const divgetCharacterCountExcludingSpaces = document.querySelector("li[ data-testid= 'character-no-spaces-count']");
 const divgetNumberCount = document.querySelector("li[data-testid='number-count']"); 
 const divgetNumberSum = document.querySelector("li[data-testid='number-sum']");
-const divgetAverageWordLength = document.querySelector("li [data-testid='word-length-average']")
+const divgetAverageWordLength = document.querySelector("li[data-testid='word-length-average']")
 
 prueba.addEventListener("keyup", (event) => { //
   const palabras = event.target.value
@@ -42,5 +42,12 @@ prueba.addEventListener("keyup", (event) => { //
 const botonLimpiar = document.getElementById("reset-button");
 botonLimpiar.addEventListener("click", () => {
   prueba.value = "";
+  divWordCount.innerHTML ="Palabras:0"
+  divgetCharacterCount.innerHTML = "Caracteres:0"
+  divgetCharacterCountExcludingSpaces.innerHTML = "Caracteres sin espacio:0"
+  divgetNumberCount.innerHTML= "Números:0"
+  divgetNumberSum.innerHTML= "suma:0"
+  divgetAverageWordLength.innerHTML= "Longitud media:0"
+
 
 })

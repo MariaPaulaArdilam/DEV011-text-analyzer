@@ -50,7 +50,7 @@ const analyzer = {
       }
     }
     const totalAverage = CharacterCount / wordcount;
-    return parseFloat (totalAverage.toFixed(2));
+    return parseFloat(totalAverage.toFixed(2));
 
   },
   getNumberCount: (text) => {
